@@ -20,3 +20,12 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 - #### Longest Word in Dictionary
     Make a Trie and add all the words and the string made till that word too. Perform dfs for the longest string under any TrieNode with all isWord values being true. Call dfs(root).
+
+- #### Single Number
+    Use property of XOR.
+
+- #### Minimum Depth of Binary Tree
+    Easy recursion. Edge case of NULL root node.
+
+- #### K Closest Points to Origin
+    Push all in a heap (priority_queue) and pop k elements. Note the details of overloading the comparator.
