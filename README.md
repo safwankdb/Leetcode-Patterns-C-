@@ -17,3 +17,6 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 - #### Climbing Stairs
     Find the nth fibonacci number.
+
+- #### Longest Word in Dictionary
+    Make a Trie and add all the words and the string made till that word too. Perform dfs for the longest string under any TrieNode with all isWord values being true. Call dfs(root).
