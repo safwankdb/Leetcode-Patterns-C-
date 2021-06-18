@@ -9,15 +9,23 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 
 ## Medium
+- #### Linked List Cycle II
+    - Use hashmap of pointers to nodes.
+    - For O(1) space, mark visited on input.
+    - If input is non mutable, then use 2 pointers to find intersection, then move the slow pointer and a new pointer from head together, they'll meet at start of cycle.
+
+    - When the fast and slow pointers meet, the slow pointer has movec m steps = length of cycle. 
 
 - #### Decode Ways
     Just use 2 dimensional DP. Keep track of carry.
 
 - #### Word Search
-    Simple DFS / Backtracking algorithm. Can save space by marking visited notes inplace using special char instead of maintaing a boolean 2d array.
+    - Simple DFS / Backtracking algorithm. 
+    - Can save space by marking visited notes inplace using special char instead of maintaing a boolean 2d array.
 
 - #### Rotate Image
-    Transpose then Flip. Can do it in almost half the operations by replacing values in circular order.
+    - Transpose then Flip in place.
+    - Can do it in almost half the operations by replacing values in circular order.
 
 - #### K Closest Points to Origin
     Push all in a heap (priority_queue) and pop k elements. Note the details of overloading the comparator.
