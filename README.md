@@ -51,4 +51,12 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - #### Minimum Depth of Binary Tree
     Easy recursion. Edge case of NULL root node.
 
+## Concepts to Revise
+
+- [ ] Segment Tree
+- [ ] Fenwick Tree
+- [ ] Quadtree
+- [ ] Trie
+- [ ] Monotonic Queue
+- [ ] 0-1 BFS
 
