@@ -7,6 +7,8 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - #### Binary Tree Maximum Path Sum
     DFS on the tree, return the max sum including the root and one side. Calculate the sum of both sides within the function and track using global max.
 
+- #### Word Seach II
+    Make Trie from words and then DFS.
 
 ## Medium
 - #### Linked List Cycle II
