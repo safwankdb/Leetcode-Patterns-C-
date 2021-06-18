@@ -7,7 +7,11 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - #### Binary Tree Maximum Path Sum
     DFS on the tree, return the max sum including the root and one side. Calculate the sum of both sides within the function and track using global max.
 
+
 ## Medium
+
+- #### Decode Ways
+    Just use 2 dimensional DP. Keep track of carry.
 
 - #### Word Search
     Simple DFS / Backtracking algorithm. Can save space by marking visited notes inplace using special char instead of maintaing a boolean 2d array.
