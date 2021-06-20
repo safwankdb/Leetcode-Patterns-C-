@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Implement Trie (Prefix Tree)
+    Straightforward if concept is known. [Playlist for understanding Tries](https://www.youtube.com/watch?v=6PX6wqDQE20&list=PLEJXowNB4kPyi859E6qGUs7jlpQehJndl)
+
 - #### Target Sum
     Basic dfs is accepted, there is decent speedup with memoization. The optimal solution uses subset sum and should be studied [here](https://leetcode.com/problems/target-sum/discuss/97334/Java-(15-ms)-C%2B%2B-(3-ms)-O(ns)-iterative-DP-solution-using-subset-sum-with-explanation).
 
