@@ -41,6 +41,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Easy
 
+- #### Path Sum
+    Simple recursion. Solve subproblems for both child trees.
+
 - #### Contains Duplicate
     Use hash table (unordered_set in C++).
 
