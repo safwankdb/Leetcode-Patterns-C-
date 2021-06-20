@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Target Sum
+    Basic dfs is accepted, there is decent speedup with memoization. The optimal solution uses subset sum and should be studied [here](https://leetcode.com/problems/target-sum/discuss/97334/Java-(15-ms)-C%2B%2B-(3-ms)-O(ns)-iterative-DP-solution-using-subset-sum-with-explanation).
+
 - #### Generate Parentheses
     For n > 0, there will aalways be an opening bracket left most. If the expression inside the leftmost bracket and its complement has i pairs, there'll the n-i-1 pairs outside. Just use recursion to find these sets and take product.
 
@@ -65,4 +68,4 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - [ ] Trie
 - [ ] Monotonic Queue
 - [ ] 0-1 BFS
-
+- [ ] Union Find
