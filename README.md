@@ -11,6 +11,10 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
     Make Trie from words and then DFS.
 
 ## Medium
+
+- #### Generate Parentheses
+    For n > 0, there will aalways be an opening bracket left most. If the expression inside the leftmost bracket and its complement has i pairs, there'll the n-i-1 pairs outside. Just use recursion to find these sets and take product.
+
 - #### Linked List Cycle II
     - Use hashmap of pointers to nodes.
     - For O(1) space, mark visited on input.
