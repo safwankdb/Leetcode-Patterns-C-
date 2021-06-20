@@ -41,6 +41,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Easy
 
+- #### Invert Binary Tree
+    Recursively swap left and right subtrees.
+
 - #### Path Sum
     Simple recursion. Solve subproblems for both child trees.
 
