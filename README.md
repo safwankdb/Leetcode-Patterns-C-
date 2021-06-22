@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Jump Game
+    Keep track of farthest reachable index from current index. Iterate as far as reachable. If last index is reachable, return true.
+
 - #### Word Break
     Use Trie to store dictionary. BFS to search.
 
