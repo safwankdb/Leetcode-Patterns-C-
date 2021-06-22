@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Coin Change
+    Build a DP from bottom up. amount = 0 takes 0 coins, for all amounts, iterate over all coins and add them once. Skip if the current amount is unreachable. Sorting the coins may give slight speedup.
+
 - #### Implement Trie (Prefix Tree)
     Straightforward if concept is known. [Playlist for understanding Tries](https://www.youtube.com/watch?v=6PX6wqDQE20&list=PLEJXowNB4kPyi859E6qGUs7jlpQehJndl)
 
