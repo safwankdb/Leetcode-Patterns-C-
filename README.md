@@ -7,10 +7,13 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - #### Binary Tree Maximum Path Sum
     DFS on the tree, return the max sum including the root and one side. Calculate the sum of both sides within the function and track using global max.
 
-- #### Word Seach II
+- #### Word Search II
     Make Trie from words and then DFS.
 
 ## Medium
+
+- #### Word Break
+    Use Trie to store dictionary. BFS to search.
 
 - #### Coin Change
     Build a DP from bottom up. amount = 0 takes 0 coins, for all amounts, iterate over all coins and add them once. Skip if the current amount is unreachable. Sorting the coins may give slight speedup.
@@ -22,7 +25,7 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
     Basic dfs is accepted, there is decent speedup with memoization. The optimal solution uses subset sum and should be studied [here](https://leetcode.com/problems/target-sum/discuss/97334/Java-(15-ms)-C%2B%2B-(3-ms)-O(ns)-iterative-DP-solution-using-subset-sum-with-explanation).
 
 - #### Generate Parentheses
-    For n > 0, there will aalways be an opening bracket left most. If the expression inside the leftmost bracket and its complement has i pairs, there'll the n-i-1 pairs outside. Just use recursion to find these sets and take product.
+    For n > 0, there will always be an opening bracket left most. If the expression inside the leftmost bracket and its complement has i pairs, there'll the n-i-1 pairs outside. Just use recursion to find these sets and take product.
 
 - #### Linked List Cycle II
     - Use hashmap of pointers to nodes.
