@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Sort Colors
+    Count the elements and replace.
+
 - #### Jump Game
     Keep track of farthest reachable index from current index. Iterate as far as reachable. If last index is reachable, return true.
 
