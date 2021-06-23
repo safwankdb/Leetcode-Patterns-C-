@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Reverse Linked List II
+    Reverse from left node, keep a counter for number of reversals. special case when left = 1.
+
 - #### Sort Colors
     Count the elements and replace.
 
