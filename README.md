@@ -56,6 +56,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Easy
 
+- #### Reverse Linked List
+    Iteratively reverse direction of each 'arrow'.
+
 - #### Invert Binary Tree
     Recursively swap left and right subtrees.
 
