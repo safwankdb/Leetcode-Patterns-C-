@@ -12,6 +12,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+- #### Number of Islands
+    Use DFS to check islands and increment the counter.
+
 - #### Reverse Linked List II
     Reverse from left node, keep a counter for number of reversals. special case when left = 1.
 
