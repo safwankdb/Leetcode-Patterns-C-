@@ -1,6 +1,6 @@
 # Leetcode Patterns C++
 
-C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-patterns]()
+C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-patterns]() and some other good problems.
 
 ## Hard
 
