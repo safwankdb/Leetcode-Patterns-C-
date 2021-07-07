@@ -4,6 +4,13 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Hard
 
+#### Cherry Pickup
+- Problem is equivalent to 2 people walking from top left to bottom right.
+- x1 + y1 = x2 + y2 always => we can use a 3D DP with states (x1, y1, x2).
+- Count cherry only once if they both land at same place.
+- Make sure all answers are being memoized (the -1 case when path is invalid).
+
+
 #### Binary Tree Maximum Path Sum
 - DFS on the tree, return the max sum including the root and one side. Calculate the sum of both sides within the function and track using global max.
 
