@@ -79,6 +79,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Easy
 
+#### Counting Bits
+- ```dp[i] = (i % 2) + dp[i / 2];```
+
 #### Reverse Linked List
 - Iteratively reverse direction of each 'arrow'.
 
