@@ -60,8 +60,7 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - Use hashmap of pointers to nodes.
 - For O(1) space, mark visited on input.
 - If input is non mutable, then use 2 pointers to find intersection, then move the slow pointer and a new pointer from head together, they'll meet at start of cycle.
-
-    - When the fast and slow pointers meet, the slow pointer has movec m steps = length of cycle. 
+- When the fast and slow pointers meet, the slow pointer has movec m steps = length of cycle. 
 
 - #### Decode Ways
     Just use 2 dimensional DP. Keep track of carry.
@@ -78,6 +77,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - Push all in a heap (priority_queue) and pop k elements. Note the details of overloading the comparator.
 
 ## Easy
+
+#### Maximum Subarray
+- Kadane's Algorithm.
 
 #### Counting Bits
 - ```dp[i] = (i % 2) + dp[i / 2];```
