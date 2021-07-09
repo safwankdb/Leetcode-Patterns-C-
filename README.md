@@ -23,12 +23,16 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+#### Longest Consecutive Sequence
+1. Use Union Find with path compression, if any neighbors are encountered, union them. Count the max size of a connected set. -> O(N * alpha(N)) (Not sure of compexity, need to confirm).
+2. As in the leetcode dicussion, just walk each streak. Make a set from the array and count the max length of streak we can get starting from each element. If i-1 is in set for an elemnent i, dont count from i. -> O(n)
+
 #### Kth Smallest Element in a Sorted Matrix
 - For all the below methods : if using heap / set, work with tuple<int, int, int> of (value, row, column).
-- Add all elements to heap and pop k times -> O(n^2 + klog(n)) = O(n^2)
-- Maintain size of heap at k by adding and popping min element after each add. -> O(n^2)
-- For a value x, write countLessThan(x) which return number of elements less than x. It can be done in nlog(n) time by just binary search inside every row. Then binary search the value of x for which function returns countLessThan(x) = k. -> O(nlog(n)log(range(matrix)))
-- Use BFS. If there is a set S of possible elements for m'th position and let x_m be the m'th smallest element, the possible elements for m+1'th position would lie in (S \ {x_m}) U (Neighbors of x_m). Iterate until k, for each position pop the min element from a heap, update the frontier set. -> O(klog(k))
+1. Add all elements to heap and pop k times -> O(n^2 + klog(n)) = O(n^2)
+2. Maintain size of heap at k by adding and popping min element after each add. -> O(n^2)
+3. For a value x, write countLessThan(x) which return number of elements less than x. It can be done in nlog(n) time by just binary search inside every row. Then binary search the value of x for which function returns countLessThan(x) = k. -> O(nlog(n)log(range(matrix)))
+4. Use BFS. If there is a set S of possible elements for m'th position and let x_m be the m'th smallest element, the possible elements for m+1'th position would lie in (S \ {x_m}) U (Neighbors of x_m). Iterate until k, for each position pop the min element from a heap, update the frontier set. -> O(klog(k))
 
 #### Sort List
 - Just use recursive merge sort for O(log(n)) space. Use iterative for O(1).
