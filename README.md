@@ -23,6 +23,10 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Medium
 
+#### Longest Increasing Subsequence
+1. 1D DP: dp[i] = length of LIS including i'th element is arr[:i]. -> O(n^2)
+2. There is a O(nlog(n)) solution explained [here](https://leetcode.com/problems/longest-increasing-subsequence/solution/).
+
 #### Longest Consecutive Sequence
 1. Use Union Find with path compression, if any neighbors are encountered, union them. Count the max size of a connected set. -> O(N * alpha(N)) (Not sure of compexity, need to confirm).
 2. As in the leetcode dicussion, just walk each streak. Make a set from the array and count the max length of streak we can get starting from each element. If i-1 is in set for an elemnent i, dont count from i. -> O(n)
