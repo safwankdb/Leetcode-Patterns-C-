@@ -4,6 +4,10 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Hard
 
+#### Merge k Sorted Lists
+- Make a heap of ListNode* with custom comparator.
+- Keep popping from heap and if next node is present, push it in the heap. -> O(n log(k))
+
 #### Cherry Pickup
 - Problem is equivalent to 2 people walking from top left to bottom right.
 - x1 + y1 = x2 + y2 always => we can use a 3D DP with states (x1, y1, x2).
@@ -111,13 +115,3 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 #### Minimum Depth of Binary Tree
 - Easy recursion. Edge case of NULL root node.
-
-## Concepts to Revise
-
-- [ ] Segment Tree
-- [ ] Fenwick Tree
-- [ ] Quadtree
-- [ ] Trie
-- [ ] Monotonic Queue
-- [ ] 0-1 BFS
-- [ ] Union Find
