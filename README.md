@@ -4,6 +4,24 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Hard
 
+#### Trapping Rain Water
+- Standard problem, for each cell look at max height to the left and the right. The min of those would be height of cell + water, subtract height of cell. Sum over all cells.
+
+
+#### Median of Two Sorted Arrays
+- Let k = (n + m) / 2 + 1, the median is the last or avg of last 2 values of the first k elements of the merged list.
+- Partition one of the arrays at i, s.t. first i elements of this array and j = k - i  elements of other array are the smallest k elements if the lists were merged.
+- This is same as choosing the maximum i s.t. A[i - 1] <= B[k - i]. This can be done via binary search.
+- [Solution Video](https://www.youtube.com/watch?v=Hp-2H1angdw).
+
+#### Find Median from Data Stream
+- Maintain a min-heap and max-heap s.t. all elements in min-heap >= all elements in max-heap. 
+- Maintain 0 <= len(min-heap) - len(max-heap) <= 1
+- Both will have almost same elements so computing median is trivial.
+- While adding new element x, if it's smaller than max heap's top, then pop max heap and push x. Now x = max(max_heap.top(), x).
+    - If both have same size, add x to min heap.
+    - If min heap has more elements, push x in min heap, pop min_heap() and push the value in max_heap() to maintain equal size.
+
 #### Merge k Sorted Lists
 - Make a heap of ListNode* with custom comparator.
 - Keep popping from heap and if next node is present, push it in the heap. -> O(n log(k))
@@ -22,6 +40,9 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 - Make Trie from words and then DFS.
 
 ## Medium
+
+#### Snake and Ladders
+- User BFS / DFS.
 
 #### Longest Increasing Subsequence
 1. 1D DP: dp[i] = length of LIS including i'th element is arr[:i]. -> O(n^2)
@@ -123,3 +144,10 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 #### Minimum Depth of Binary Tree
 - Easy recursion. Edge case of NULL root node.
+
+#### Peak Index in a Mountain Array
+- Binary Search
+
+#### Find Peak Element
+- Binary Search
+
