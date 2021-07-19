@@ -4,6 +4,11 @@ C++ solutions for the leetcode problem list [https://seanprashad.com/leetcode-pa
 
 ## Hard
 
+#### Prefix and Suffix Search
+1.  Prefix search using a Trie, collect all words with matching prefix using BFS (Queue), search for suffix individually. Need to store index and the final word in TrieNode for matching suffix.
+
+2. Make paired Trie, each node represents 2 letters one from the word one from reversed word, TrieNode.children[a][b] tranitions to next node. Search by jumping to [i][j] th child where i, j  are characters of prefix and reversed suffix in sync. Then BFS to collect all candidates.
+
 #### Trapping Rain Water
 - Standard problem, for each cell look at max height to the left and the right. The min of those would be height of cell + water, subtract height of cell. Sum over all cells.
 
